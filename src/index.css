@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ .button{
+  right: -108px
+ }
+ 
+ @media (max-width: 880px) {
+  .logo{
+    width: 20%;
+    margin: 0 auto;
+  }
+  .hamburger {
+    display: block;
+    z-index: 100;
+   }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+  /* navbar */
+  .navLinks { 
+      position: absolute;
+      top: -100%;
+      left: 0;
+      transform: translateX(100%);
+    transition: 1s;
+    background-color: hsl(0, 0%, 98%);
+    z-index: 1;
+    width: 100%;
+  }
+  .navLinks ul{
+      color: black;
+      justify-content: end;
+      margin-right: 5px;
+  }
+  .link {
+    margin: 20px 0;
+  }
+
+  .navLinks.active {
+      transform: translateX(0); 
+  top: 25px; 
+  }
+}
