@@ -51,7 +51,7 @@ const App = () => {
                   <span className="bar block bg-black w-xsm my-1 mx-auto h-xsm"></span>
                 </div>
                 <div className="logo w-sm ">
-                  <img src="/images/logo.svg" alt="" />
+                  <img src="./images/logo.svg" alt="" />
                 </div>
                 <div className={`navLinks ${isActive ? "active" : ""} `}>
                   <ul className={"flex text-white gap-3 font-semibold  "}>
@@ -91,13 +91,13 @@ const App = () => {
                   onClick={handlePrevButton}
                   className="flex px-5 py-3 bg-black hover:bg-secondary cursor-pointer transition delay-150"
                 >
-                  <img src="/images/icon-angle-left.svg" alt="" />
+                  <img src="./images/icon-angle-left.svg" alt="" />
                 </div>
                 <div
                   onClick={handleNextButton}
                   className="flex px-5 py-3 bg-black hover:bg-secondary cursor-pointer transition delay-150"
                 >
-                  <img src="/images/icon-angle-right.svg" alt="" />
+                  <img src="./images/icon-angle-right.svg" alt="" />
                 </div>
               </div>
             </div>
@@ -116,7 +116,7 @@ const App = () => {
                   >
                     SHOP NOW
                   </a>
-                  <img src="/images/icon-arrow.svg" alt="" />
+                  <img src="./images/icon-arrow.svg" alt="" />
                 </div>
               </div>
             </div>
@@ -127,7 +127,7 @@ const App = () => {
             <div className="col-span-2 lg1:col-span-1 sm:col-span-1 ">
               <img
                 className="h-full w-full"
-                src="/images/image-about-dark.jpg"
+                src="./images/image-about-dark.jpg"
                 alt=""
               />
             </div>
@@ -146,7 +146,7 @@ const App = () => {
             <div className="col-span-2 lg1:col-span-1 sm:col-span-1">
               <img
                 className="h-full w-full"
-                src="/images/image-about-light.jpg"
+                src="./images/image-about-light.jpg"
                 alt=""
               />
             </div>
