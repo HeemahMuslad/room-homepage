@@ -13,10 +13,8 @@
   }
   .hamburger {
     display: block;
-    z-index: 100; 
-position: absolute;
-top: 25px;  
- }
+    z-index: 100;
+   }
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
@@ -31,23 +29,29 @@ top: 25px;
   .navLinks { 
       position: absolute;
       top: -100%;
-      left: -100%;
+      left: 20%;
+      transform: translateX(100%);
     transition: 1s;
-    background-color: hsl(0, 0%, 63%);
-    z-index: 10;
+    background-color: hsl(0, 0%, 98%);
+    z-index: 1;
     width: 100%;
-  ;
   }
   .navLinks ul{
+      color: black;
       justify-content: end;
-      padding: 10px;
+      margin-right: 5px;
+      width: 100%;
+
   }
   .link {
     margin: 20px 0;
-
   }
 
   .navLinks.active {
-top: 0;
-left: 0;   }
+      transform: translateX(0); 
+  top: 25px; 
+  left: -100px;
+  }
 }
+ 
+ 

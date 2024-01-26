@@ -39,16 +39,18 @@ const App = () => {
                 backgroundImage: `url(${room.image})`,
               }}
             >
-              <nav className="flex items-center w-max     mx-auto py-10">
+              <nav className={`flex items-center w-max      mx-auto py-10 ${
+                  room.id - 1 !== currentUser ? "hidden" : "block"
+                }`}>
                 <div
                   onClick={toggleMenu}
                   className={`hamburger cursor-pointer hidden ${
                     isActive ? "active" : ""
                   } w-auto p-1 border-2 border-black/3 border-solid rounded`}
                 >
-                  <span className="bar block bg-black w-xsm my-1 mx-auto h-xsm"></span>
-                  <span className="bar block bg-black w-xsm my-1 mx-auto h-xsm"></span>
-                  <span className="bar block bg-black w-xsm my-1 mx-auto h-xsm"></span>
+                  <span className="bar block bg-white w-xsm my-1 mx-auto h-xsm"></span>
+                  <span className="bar block bg-white  w-xsm my-1 mx-auto h-xsm"></span>
+                  <span className="bar block bg-white  w-xsm my-1 mx-auto h-xsm"></span>
                 </div>
                 <div className="logo w-sm ">
                   <img src="./images/logo.svg" alt="" />
